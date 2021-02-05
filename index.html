@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
-    <div class="header">
-        <a href="#home">HOME</a>
+    <nav>
+        <a href="#profile">HOME</a>
         <a href="#about">ABOUT</a>
         <a href="#skills">SKILLS</a>
         <a href="#work">WORK</a>
-        <a href="#letstalk">LET'S TALK</a>
-    </div>
-    <div class="profile" id="home">
-        <img src="./assets/portfolio-profile-pic-new.png" alt="profile-pic">
+        <a href="#lets-talk">LET'S TALK</a>
+    </nav>
+
+    <div class="profile" id="profile">
+        <img src="./assets/portfolio-profile-pic.png" alt="profile-pic">
         <p>Akshar Mishra</p>
         <span>A ProGrad on his way to becoming a Full Stack Developer soon!</span>
-        <button><a href="./assets/file-sample_100kB.doc" download="">My Resume</a></button>
+        <button>
+            <a href="./assets/file-sample_100kB.doc" download="">My Resume</a>
+        </button>
     </div>
+
     <div class="about" id="about">
         <h2>Who Am I</h2>
-        <div  class="icons">
-            <i class="fa fa-user"></i>
-            <i class="fa fa-graduation-cap"></i>
-            <i class="fa fa-heart"></i>
+        <div class="icons">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <i class="fa fa-heart" aria-hidden="true"></i>
         </div>
-        <div  class="about-text">
+        <div class="about-text">
             <p>A soon to be full stack developer with an eye for design, UX and UI development and a strong desire to learn and create</p>
             <p>I graduated out of SRM with a CGPA of 9.4 in Computer Science. I’ve also been an all rounder at high school acads.</p>
             <p>I love design protyping, building cool products, music, football & trekking</p>
         </div>
     </div>
-    <div id="skills" class="skills">
+
+    <div class="skills" id="skills">
         <h2>My Skills</h2>
         <div class="progress">
             <span>JavaScript</span>
@@ -49,52 +54,60 @@
             <progress max="100" value="95"></progress>
         </div>
     </div>
-    <div id="work" class="work">
+
+    <div class="work" id="work">
         <h2>My Work</h2>
-        <div class="work-pics" >
+        <div class="work-pics">
             <span class="card">
-                <a href="https://prograd.org/" target="_blank">
-                <img src="./assets/weather-app.jpg" alt="Weather App">
-                <p>Weather App</p>
+                <a href="https://prograd.org/">
+                    <img src="./assets/weather-app.jpg" alt="">
+                    <p>Weather App</p>
+                </a>
+            </span class="card">
+            <span class="card">
+                <a href="https://prograd.org/">
+                    <img src="./assets/online-shopping.jpg" alt="">
+                    <p>Ecommerce Website</p>
                 </a>
             </span>
             <span class="card">
-                <a href="https://prograd.org/" target="_blank">
-                <img src="./assets/online-shopping.jpg" alt="online-shopping">
-                <p>Ecommerce Website</p>
+                <a href="https://prograd.org/">
+                    <img src="./assets/Youtube.jpg" alt="">
+                    <p>Redesign of YouTube</p>
                 </a>
             </span>
             <span class="card">
-                <a href="https://prograd.org/" target="_blank">
-                <img src="./assets/Youtube.jpg" alt="Youtube">
-                <p>Redesign of YouTube</p>
+                <a href="https://prograd.org/">
+                    <img src="./assets/snooker.jpg" alt="">
+                    <p>Online Snooker Game</p>
                 </a>
             </span>
             <span class="card">
-                <a href="https://prograd.org/" target="_blank">
-                <img src="./assets/snooker.jpg" alt="snooker">
-                <p>Online Snooker Game</p>
+                <a href="https://prograd.org/">
+                    <img src="./assets/music.jpg" alt="">
+                    <p>Music App</p>
                 </a>
             </span>
             <span class="card">
-                <a href="https://prograd.org/" target="_blank">
-                <img src="./assets/music.jpg" alt="music">
-                <p>Music App</p>
-            </a>
+                <a href="https://prograd.org/">
+                    <img src="./assets/food.jpg" alt="">
+                    <p>Food Delivery App</p>
+                </a>
             </span>
-            <span class="card">
-                <a href="https://prograd.org/" target="_blank">
-                <img src="./assets/food.jpg" alt="food">
-                <p>Food Delivery App</p>
-            </a>
-            </span>
+
         </div>
     </div>
-    <div id="letstalk" class="lets-talk">
+
+    <div class="lets-talk" id="lets-talk">
         <h2>Let's Talk</h2>
         <span>If you like my work and would love to connect with me, then hit me up!</span>
         <a href="mailto:team@prograd.org" target="_blank">Let's Talk ✌🏻</a>
         <div class="copyright">© Akshar Mishra. All rights reserved</div>
+
     </div>
+
+
+
+    
 </body>
 </html>
